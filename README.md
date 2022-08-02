@@ -7,3 +7,6 @@ What this program entails:
 -- The turtle.write() method to place the user's answer onto the appropriate coordinates
 -- A score variable that increments for each correct guess
 -- The Pandas library for reading from the original CSV of all states and generating a ne CSV file of all the missed states
+
+Future applications: 
+-- This method can be used as an educational tool for any political map.

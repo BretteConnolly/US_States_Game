@@ -15,10 +15,7 @@ score = 0
 while score < 50: #while not all the states have been guessed
   answer_state = screen.textinput(f"{score} / 50", "Name a U.S. state:").title()
   if answer_state == "Exit":
-    missing_states = [] #states not guessed by the end
-    for state in all_states:
-      if state not in guessed_states:
-        missing_states.append(state)
+    missing_states = [state for state in all_states if state not in guessed_states] #states the user did not guess
     new_data = pandas.DataFrame(missing_states) #convert to DataFrame so this list can be stored in a CSV file as a Pandas series
     new_data.to_csv("states.to.learn.csv") #file of missing states provided at the end to educate the user
     break

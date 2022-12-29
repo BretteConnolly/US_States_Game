@@ -8,5 +8,5 @@ What this program entails:
 -- A score variable that increments for each correct guess
 -- The Pandas library for reading from the original CSV of all states and generating a ne CSV file of all the missed states
 
-Future applications: 
+Applications: 
 -- This method can be used as an educational tool for any political map.
